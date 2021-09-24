@@ -1,0 +1,1 @@
+<view class="home data-v-92bb8f34"><block wx:if="{{bottomShow}}"><view class="bottom data-v-92bb8f34"><bottom vue-id="1da55560-1" class="data-v-92bb8f34" bind:__l="__l"></bottom></view></block></view>

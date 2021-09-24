@@ -1,0 +1,628 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+/*每个页面公共css */
+page,
+page,
+view,
+input
+{
+	box-sizing: border-box;
+	font-size: 12px;
+}
+uni-page-body {
+	height: 100%;
+}
+/*CSS reset*/
+page,
+page{
+	margin: 0;
+	padding: 0;
+	font-family: PingFangSC, helvetica neue, hiragino sans gb, arial, microsoft yahei ui, microsoft yahei, simsun, sans-serif !important;
+}
+input,
+textarea {
+	outline: none;
+}
+text,view {
+	cursor: pointer;
+	-webkit-user-select: text;
+	        user-select: text;
+}
+._table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+._fieldset,
+image {
+	border: 0;
+	vertical-align: top;
+}
+._address,
+._caption,
+._cite,
+._code,
+._dfn,
+._em,
+._strong,
+._th,
+._var {
+	font-style: normal;
+	font-weight: normal
+}
+._ol,
+._ul {
+	list-style: none
+}
+._q:before,
+._q:after {
+	content: ''
+}
+._abbr,
+acronym {
+	border: 0
+}
+._a {
+	text-decoration: none;
+}
+._a:link {
+	color: #191C3D;
+}
+._a:hover {
+	color: #191C3D;
+}
+._a:active {
+	color: #191C3D;
+}
+._a:visited {
+	color: #191C3D;
+}
+textarea,
+button {
+	-webkit-appearance: none;
+	appearance: none;
+}
+page {
+	font: 12px "Microsoft Yahei", Arial, sans-serif, Helvetica, \5b8b\4f53;
+}
+._hr {
+	border: none
+}
+/*PC端*/
+/* vue cloak */
+[v-cloak] {
+	display: none;
+}
+.w100 {
+	width: 100%;
+}
+.line-e {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.line2-e {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+/*文字排版*/
+.fb {
+	font-weight: bold;
+}
+.fn {
+	font-weight: normal;
+}
+.fs {
+	font-style: normal;
+}
+.tj {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	/*只有IE支持*/
+}
+.ti {
+	text-indent: 2rpx;
+}
+.tc {
+	text-align: center;
+}
+.tr {
+	text-align: right;
+}
+.tl {
+	text-align: left;
+}
+.vt {
+	vertical-align: top;
+}
+.vm {
+	vertical-align: middle;
+}
+.vb {
+	vertical-align: bottom;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+.pr {
+	position: relative;
+}
+.pa {
+	position: absolute;
+}
+.bc {
+	margin-left: auto;
+	margin-right: auto
+}
+/*block center*/
+/*块联元素*/
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+.i-block {
+	display: inline-block;
+}
+.none {
+	display: none;
+}
+/* 定义盒模型为怪异和模型（宽高不受边框影响） */
+.boxSiz {
+	box-sizing: border-box;
+}
+/* 强制换行 */
+.toWrap {
+	word-break: break-all;
+	/* 只对英文起作用，以字母作为换行依据。 */
+
+	word-wrap: break-word;
+	/* 只对英文起作用，以单词作为换行依据。*/
+
+	white-space: pre-wrap;
+	/* 只对中文起作用，强制换行。*/
+}
+/*清楚浮动*/
+/* 	.clearfix:after {
+		content: "\200b";
+		display: block;
+		height: 0;
+		clear: both;
+	} */
+/*\200b >Unicode零宽度空格*/
+.clearfix {
+	zoom: 1;
+}
+/*IE/7/6/*/
+/*******padding******/
+.p10rpx {
+	padding: 10rpx;
+}
+.p15rpx {
+	padding: 15rpx;
+}
+.p20rpx {
+	padding: 20rpx;
+}
+.p25rpx {
+	padding: 25rpx;
+}
+.p30rpx {
+	padding: 30rpx;
+}
+.p40rpx {
+	padding: 40rpx;
+}
+.p50rpx {
+	padding: 50rpx;
+}
+/*******padding******/
+/*******padding top******/
+.pt15rpx {
+	padding-top: 15rpx;
+}
+.pt20rpx {
+	padding-top: 20rpx;
+}
+.pt25rpx {
+	padding-top: 25rpx;
+}
+.pt30rpx {
+	padding-top: 30rpx;
+}
+.pt40rpx {
+	padding-top: 40rpx;
+}
+.pt50rpx {
+	padding-top: 50rpx;
+}
+/*******padding top******/
+/*******padding bottom******/
+.pb15rpx {
+	padding-bottom: 15rpx;
+}
+.pb20rpx {
+	padding-bottom: 20rpx;
+}
+.pb25rpx {
+	padding-bottom: 25rpx;
+}
+.pb30rpx {
+	padding-bottom: 30rpx;
+}
+.pb40rpx {
+	padding-bottom: 40rpx;
+}
+.pb50rpx {
+	padding-bottom: 50rpx;
+}
+/*******padding bottom******/
+/*******padding left******/
+.pl10rpx {
+	padding-left: 10rpx;
+}
+.pl15rpx {
+	padding-left: 15rpx;
+}
+.pl20rpx {  
+	padding-left: 20rpx;
+}
+.pl25rpx {   
+	padding-left: 25rpx;
+}
+.pl30rpx {  
+	padding-left: 30rpx;
+}
+.pl40rpx {   
+	padding-left: 40rpx;
+}
+.pl50rpx {   
+	padding-left: 50rpx;
+}
+/*******padding left******/
+/*******padding right******/
+.pr10rpx {
+	padding-right: 10rpx;
+}
+.pr15rpx {
+	padding-right: 15rpx;
+}
+.pr20rpx {  
+	padding-right: 20rpx;
+}
+.pr25rpx {   
+	padding-right: 25rpx;
+}
+.pr30rpx {  
+	padding-right: 30rpx;
+}
+.pr40rpx {   
+	padding-right: 40rpx;
+}
+.pr50rpx {   
+	padding-right: 50rpx;
+}
+/*******padding right******/
+/*******margin******/
+.m15rpx {
+	margin: 15rpx;
+}
+.m20rpx {
+	margin: 20rpx;
+}
+.m25rpx {
+	margin: 25rpx;
+}
+.m30rpx {
+	margin: 30rpx;
+}
+.m40rpx {
+	margin: 40rpx;
+}
+.m50rpx {
+	margin: 50rpx;
+}
+/*******margin******/
+/*******margin top******/
+.mt15rpx {
+	margin-top: 15rpx;
+}
+.mt20rpx {
+	margin-top: 20rpx;
+}
+.mt25rpx {
+	margin-top: 25rpx;
+}
+.mt30rpx {
+	margin-top: 30rpx;
+}
+.mt40rpx {
+	margin-top: 40rpx;
+}
+.mt50rpx {
+	margin-top: 50rpx;
+}
+/*******margin top******/
+/*******margin bottom******/
+.mb15rpx {
+	margin-bottom: 15rpx;
+}
+.mb20rpx {
+	margin-bottom: 20rpx;
+}
+.mb25rpx {
+	margin-bottom: 25rpx;
+}
+.mb30rpx {
+	margin-bottom: 30rpx;
+}
+.m40rpx {
+	margin-bottom: 40rpx;
+}
+.m50rpx {
+	margin-bottom: 50rpx;
+}
+/*******margin bottom******/
+/*******margin left******/
+.ml10rpx {
+	margin-left: 10rpx;
+}
+.ml15rpx {
+	margin-left: 15rpx;
+}
+.ml20rpx {
+	margin-left: 20rpx;
+}
+.ml30rpx {
+	margin-left: 30rpx;
+}
+/*******margin left******/
+/*******margin right******/
+.mr10rpx {
+	margin-right: 10rpx;
+}
+.mr15rpx {
+	margin-right: 15rpx;
+}
+.mr20rpx {
+	margin-right: 20rpx;
+}
+.mr30rpx {
+	margin-right: 30rpx;
+}
+/*******margin right******/
+/*******letter spacing******/
+.ls1px {
+	letter-spacing: 1px;
+}
+.ls2px {
+	letter-spacing: 2px;
+}
+.ls3px {
+	letter-spacing: 3px;
+}
+/*******line height******/
+.lh2 {
+	line-height: 2;
+}
+/*******line height******/
+/*******font size******/
+.f12px {
+	font-size: 24rpx;
+}
+.f13px {
+	font-size: 26rpx;
+}
+.f14px {
+	font-size: 28rpx;
+}
+.f15px {
+	font-size: 30rpx;
+}
+.f16px {
+	font-size: 32rpx;
+}
+.f18px {
+	font-size: 36rpx;
+}
+.f20px {
+	font-size: 40rpx;
+}
+.f22px {
+	font-size: 44rpx;
+}
+.f24px {
+	font-size: 48rpx;
+}
+.f26px {
+	font-size: 52rpx;
+}
+.f28px {
+	font-size: 56rpx;
+}
+.f30px {
+	font-size: 60px;
+}
+/*******font size******/
+/**********************************************以下根据项目修改 ↓***********************************************/
+/*********box-shadow*********/
+.bs {
+	box-shadow: 3px -1px 10px 0px rgba(0, 0, 0, 0.08);
+}
+.br {
+	border-radius: 20rpx;
+}
+/*********box-shadow*********/
+/*********border*********/
+.border {
+	border: 1px solid #DCDCDC;
+}
+.border9 {
+	border: 1px solid #999999;
+}
+.border-b-e {
+	border-bottom: 1px solid #EEEEEE;
+}
+.border-t {
+	border-top: 1px solid #DCDCDC;
+}
+.border-b {
+	border-bottom: 1px solid #DCDCDC;
+}
+.border-b-dashed {
+	border-bottom: 1px dashed #DCDCDC;
+}
+.border-b-dashed-fe800F {
+	border-bottom: 1px dashed #FE800F;
+}
+.vam {
+	vertical-align: middle;
+}
+/*********color********/
+.black {
+	color: #000;
+}
+.white {
+	color: #FFF;
+}
+.gray {
+	color: #999;
+}
+.middle-dark {
+	color: #666;
+}
+.gray5 {
+	color: #555555;
+}
+.dark-gray {
+	color: #333;
+}
+.light-gray {
+	color: #ccc;
+}
+.main-color {
+	color: #66b1ff;
+}
+.middle-gray {
+	color: #979797;
+}
+/* background */
+.main-bg {
+	background-color: #66b1ff;
+}
+.black-bg {
+	background-color: #000000;
+}
+.white-bg {
+	background: #ffffff;
+}
+.tr50 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+.left_tr50 {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+	        transform: translate(-50%, 0%);
+}
+.top_tr50 {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	-webkit-transform: translate(0%, -50%);
+	        transform: translate(0%, -50%);
+}
+.oh {
+	overflow: hidden;
+}
+.aic {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.flex_box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.jsb {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.jca {
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.aib {
+	-webkit-box-align: baseline;
+	-webkit-align-items: baseline;
+	        align-items: baseline;
+}
+.fdc {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.flex-items {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	overflow: hidden;
+}
+@font-face {
+  font-family: "iconfont"; /* Project id 2831471 */
+  src: url('//at.alicdn.com/t/font_2831471_mipauzq5e.woff2?t=1632480977111') format('woff2'),
+       url('//at.alicdn.com/t/font_2831471_mipauzq5e.woff?t=1632480977111') format('woff'),
+       url('//at.alicdn.com/t/font_2831471_mipauzq5e.ttf?t=1632480977111') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-xiala:before {
+  content: "\e654";
+}
+
